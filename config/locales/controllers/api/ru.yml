@@ -1,0 +1,21 @@
+---
+ru:
+  api:
+    v0:
+      analytics_controller:
+        invalid_date_format: Параметры даты 'start' или 'end' должны быть в формате 'yyyy-mm-dd'.
+        start_missing: Требуемый параметр 'start' отсутствует
+      articles_controller:
+        must_be_json: параметр article должен быть объектом JSON. Вы предоставили статью как %{type}
+      follows_controller:
+        followed:
+          one: Подписан %{count} пользователь
+          other: Подписано %{count} пользователей
+      health_checks_controller:
+        app_is_up: Приложение запущено!
+        database_connected: База данных подключена
+        database_not_connected: База данных НЕ подключена!
+        redis_connected: Redis подключен
+        redis_not_connected: Redis НЕ подключен!
+      listings_controller:
+        no_credit: Недостаточно доступных кредитов

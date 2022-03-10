@@ -1,0 +1,234 @@
+---
+ru:
+  helpers:
+    label:
+      listing:
+        body_markdown: Разметка сообщения
+        expires_at: Пользовательская дата истечения срока действия
+        location: Местоположение
+        organization_id: Пост под организацией
+        tag_list: Теги
+        title: Заголовок
+      organization:
+        name: Имя
+        slug: Имя пользователя
+        profile_image: Изображение профиля
+        nav_image: Логотип для светлых тем
+        dark_nav_image: Логотип для темных тем
+        twitter_username: Имя пользователя Twitter
+        github_username: Имя пользователя GitHub
+        url: url веб-сайта
+        tag_line: Строка тега
+        summary: Резюме
+        location: Местоположение
+        email: Электронная почта службы поддержки
+        company_size: Размер организации
+        story: Наша история
+        tech_stack: Наш стек
+        cta_body_markdown: Основной текст
+        cta_button_text: Текст ссылки
+        cta_button_url: url ссылки
+        proof: Доказательство
+      podcast:
+        android_url: URL Android
+        description: Описание
+        feed_url: url фида
+        изображение: Изображение
+        itunes_url: url Itunes
+        main_color_hex: Основной цвет hex
+        overcast_url: url пасмурного цвета
+        pattern_image: Изображение шаблона
+        slug: Slug
+        soundcloud_url: URL Soundcloud
+        title: Заголовок
+        twitter_username: Имя пользователя Twitter
+        website_url: url веб-сайта
+      response_template:
+        title: Заголовок
+        content: Содержание комментария (Markdown)
+      user:
+        name: Имя
+        email: Email
+        username: Имя пользователя
+        profile_image: Изображение профиля
+      users_notification_setting:
+        email_newsletter: Отправлять мне еженедельные информационные письма
+        email_digest_periodic: периодически отправлять мне дайджест лучших сообщений из моих тегов
+        email_membership_newsletter: Отправлять мне письма с рассылкой для постоянных членов
+        email_tag_mod_newsletter: Отправлять мне письма с рассылкой для модераторов тегов
+        email_community_mod_newsletter: Рассылка писем для модераторов сообществ
+        email_comment_notifications: Отправлять мне письмо, когда кто-то отвечает мне в теме комментариев
+        email_follower_notifications: Отправлять мне письмо, когда кто-то новый подписался на меня
+        email_mention_notifications: Отправлять мне письмо, когда кто-то упоминает меня
+        email_badge_notifications: Отправлять мне письмо, когда я получаю значок
+        email_unread_notifications: Периодически отправлять мне напоминания о том, что у меня есть непрочитанные уведомления на %{community}
+        mobile_mention_notifications: Отправлять мне push-уведомление, когда кто-то упоминает меня
+        mobile_comment_notifications: Отправлять мне push-уведомление, когда кто-то отвечает мне в теме комментариев
+        welcome_notifications: Периодически отправлять мне советы о том, как улучшить мой %{community} опыт
+        reaction_notifications: Отправлять уведомления, когда кто-то реагирует на мои комментарии или сообщения
+        mod_roundrobin_notifications: Периодически отправлять мне уведомления об успехе сообщества
+      users_setting:
+        feed_url: URL RSS-канала
+    placeholder:
+      organization:
+        name: Acme Inc.
+        slug: acmeinc
+        url: https://yoursite.com
+        location: Halifax, Nova Scotia
+        email: mail@example.com
+        company_size: "..."
+        story: "..."
+        tech_stack: "..."
+        cta_body_markdown: "..."
+        cta_button_text: Visit Acme Site
+        cta_button_url: https://example.com
+        proof: "..."
+      response_template:
+        title: "..."
+      user:
+        name: John Doe
+        email: john.doe@example.com
+        username: johndoe
+        feed_url: https://yoursite.com/feed
+    application_helper:
+      app_logo: Логотип приложения
+      follow:
+        aria_label:
+          Organization: "Follow organization: %{name}"
+          Tag: "Follow tag: %{name}"
+          User: "Follow user: %{name}"
+          default: "Follow %{type}: %{name}"
+        text:
+          Organization: Follow
+          Tag: Follow
+          User: Follow
+          default: Follow
+      required: Required
+      subtitle:
+        week: Лучшие посты этой недели
+        month: Лучшие посты этого месяца
+        year: Лучшие посты этого года
+        infinity: Все посты
+        latest: Последние посты
+      title_text: "%{title} - %{timeframe}"
+    articles_helper:
+      logo: "%{service_name} логотип"
+      most_comments: Большинство комментариев
+      most_reactions: Большинство реакций
+      most_views: Большинство просмотров
+      recently_created: Недавно создано
+      recently_published: Недавно опубликовано
+    authentication_helper:
+      any_of_those: любой из этих
+      email_password: Email и пароль
+      reminder: "Напоминание: вы использовали %{method} для аутентификации вашей учетной записи, поэтому, пожалуйста, используйте %{dem} для входа, если появится запрос."
+      это: это
+      invite_only: Вы не можете сделать это, пока не отключите режим "Только по приглашениям"
+    comments_helper:
+      ama: ama
+      ask_me_anything: Спроси меня о чем угодно
+      author: Автор
+      like: Лайк
+      nbsp_likes_html:
+        one: "&nbsp;лайк"
+        other: "&nbsp;лайки"
+    feedback_messages_helper:
+      offender:
+        body: |
+          Здравствуйте,
+
+          До нашего сведения было доведено, что вы нарушили %{community} Кодекс поведения и/или Условия использования.
+
+          Если такое поведение будет продолжаться, мы можем приостановить действие вашего аккаунта %{community}.
+
+          Если вы считаете, что произошла ошибка, пожалуйста, ответьте на это письмо, и мы посмотрим еще раз.
+
+          %{community} Команда
+        subject: "%{community} Нарушение Кодекса поведения"
+      reporter:
+        body: |
+          Здравствуйте,
+          Спасибо, что отметили содержание, которое может нарушать %{community} Кодекс поведения и/или наши Условия использования. Мы изучаем ваше сообщение и примем соответствующие
+          меры.
+          Мы ценим вашу помощь, поскольку мы работаем над созданием позитивной и инклюзивной среды для всех!
+          %{community} Команда
+        subject: "%{community} Отчет"
+      affected:
+        body: |
+          Привет,
+
+          Мы заметили несколько комментариев (сделанных другими людьми) к вашему сообщению, которые нарушают %{community} Кодекс поведения и/или наши Условия использования. Мы нетерпимо относимся к такому поведению и
+          принимаем соответствующие меры.
+
+          Спасибо за то, что вы такие замечательные, и, пожалуйста, не стесняйтесь писать нам с любыми вопросами! Мы приветствуем любые отзывы и идеи, продолжая работать над созданием открытого и инклюзивного сообщества.
+
+          %{community} Команда
+        subject: Уведомление от %{community}
+    listing_helper:
+      option:
+        one: "%{cl_name} (%{count} Credit)"
+        other: "%{cl_name} (%{count} Credits)"
+    organization_helper:
+      option: "%{org_name} (%{unspent})"
+    rate_limit_checker_helper:
+      day:
+        one: день
+        other: дней
+      general: Сколько %{thing} может создать новый участник (%{timeframe} или меньше) за любой 5-минутный период?
+      published:
+        title: Ограничение количества создаваемых постов
+        description: Сколько постов может быть создано в течение 30 секунд?
+      antispam:
+        title: Ограничение количества постов, создаваемых новым пользователем
+      update:
+        title: Ограничение количества обновлений поста
+        description: Сколько обновлений может быть сделано в течение 30 секунд? Обновите документацию API, если она изменилась.
+      upload:
+        title: Ограничение количества загружаемых изображений
+        description: Сколько изображений можно загрузить в течение 30 секунд?
+      user:
+        title: Ограничить количество изменений, которые человек может внести в свою учетную запись
+        description: Сколько изменений можно внести в учетную запись пользователя в течение 30 секунд?
+      follow:
+        title: Ограничить количество подписчиков, на которых можно подписаться за один день
+        description: На сколько человек может подписаться за день?
+      reaction:
+        title: Ограничить количество реакций на пост или комментарий
+        description: Сколько раз кто-то может отреагировать на пост или комментарий в течение любого 30-секундного периода?
+      feedback:
+        title: Ограничьте количество раз, когда кто-то может сообщить о нарушении
+        description: Сколько раз кто-то может сообщить о нарушении в течение любого 5-минутного периода?
+      comment:
+        title: Ограничить количество создаваемых комментариев
+        description: Сколько комментариев кто-то может создать за любой 30-секундный период?
+      comment_antispam:
+        title: Ограничить количество комментариев, создаваемых новым участником
+      mention:
+        title: Ограничение количества @-упоминаний в сообщении или комментарии
+        description: Сколько раз кто-то может @-упомянуть других пользователей в публикации или комментарии?
+      listing:
+        title: Ограничить количество создаваемых объявлений
+        description: Сколько объявлений можно создать в течение 1 минуты?
+      organization:
+        title: Ограничить количество создаваемых организаций
+        description: Сколько организаций кто-то может создать за любой 5-минутный период?
+      subscription:
+        title: Ограничение количества раз, когда кто-то может подписаться на почтовую рассылку списка рассылки
+        description: Сколько раз кто-то может подписаться на список рассылки в течение любого 30-секундного периода?
+      recipient:
+        title: Ограничьте количество общих писем, которые мы отправляем
+        description: Сколько электронных писем мы можем отправить кому-то в течение любых 2 минут?
+      confirmation:
+        title: Ограничить количество отправляемых электронных писем с подтверждением
+        description: Сколько раз мы можем отправить электронное письмо с подтверждением кому-либо в течение 2 минут?
+      thing:
+        posts: Посты
+        comments: Комментарии
+    settings_helper:
+      advanced: Расширенный
+      beginner: Начинающий
+      expert: Эксперт
+      mid_level: Средний уровень
+      novice: Новичок
+    social_link_helper:
+      n_a: Н/Д
